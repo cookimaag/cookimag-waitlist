@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CGV – CookiMag</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;1,400&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --g:#2E9E4F;--g-dark:#1d7a38;--g-soft:#edf7f1;--g-mid:#b8e6c8;
+  --ink:#0f0f0e;--muted:#767672;--line:#e4e4e0;--bg:#f8f8f5;
+}
+html{scroll-behavior:smooth}
+body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--ink);line-height:1.7}
+
+nav{
+  position:sticky;top:0;z-index:99;
+  padding:0 48px;height:64px;
+  display:flex;align-items:center;justify-content:space-between;
+  background:rgba(248,248,245,0.92);backdrop-filter:blur(16px);
+  border-bottom:1px solid var(--line);
+}
+.nav-brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink)}
+.nav-logo{
+  width:32px;height:32px;border-radius:8px;
+  background:linear-gradient(135deg,#3dbf63,#1d7a38);
+  display:flex;align-items:center;justify-content:center;
+  font-size:1.1rem;
+}
+.nav-brand span{font-family:-apple-system,BlinkMacSystemFont,'SF Pro Display','SF Pro Text',sans-serif;font-weight:800;font-size:1.1rem;letter-spacing:-.02em}
+.nav-back{font-size:.85rem;color:var(--muted);text-decoration:none;transition:color .2s}
+.nav-back:hover{color:var(--g)}
+
+main{max-width:760px;margin:0 auto;padding:64px 32px 96px}
+
+.eyebrow{
+  display:inline-flex;align-items:center;gap:10px;
+  font-size:.72rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--g);
+  margin-bottom:20px;
+}
+.eyebrow-line{width:28px;height:1.5px;background:var(--g)}
+
+h1{
+  font-family:-apple-system,BlinkMacSystemFont,'SF Pro Display','SF Pro Text',sans-serif;font-weight:800;
+  font-size:clamp(2rem,4vw,2.8rem);line-height:1.1;letter-spacing:-.03em;
+  margin-bottom:16px;
+}
+h2{
+  font-family:-apple-system,BlinkMacSystemFont,'SF Pro Display','SF Pro Text',sans-serif;font-weight:700;
+  font-size:1.35rem;letter-spacing:-.02em;
+  margin-top:48px;margin-bottom:14px;color:var(--ink);
+}
+h3{
+  font-weight:700;font-size:1rem;
+  margin-top:24px;margin-bottom:8px;color:var(--ink);
+}
+p{margin-bottom:14px;color:var(--ink)}
+ul{margin:8px 0 16px 24px}
+li{margin-bottom:6px;color:var(--ink)}
+a{color:var(--g);text-decoration:underline;text-underline-offset:2px}
+a:hover{color:var(--g-dark)}
+strong{font-weight:700}
+
+.meta{font-size:.82rem;color:var(--muted);margin-bottom:32px}
+
+.preamble{
+  background:#fff;border:1px solid var(--line);border-radius:14px;
+  padding:18px 22px;margin:24px 0 32px;font-size:.95rem;
+}
+
+footer{
+  padding:28px 48px;display:flex;align-items:center;justify-content:space-between;
+  border-top:1px solid var(--line);font-size:.75rem;color:var(--muted);
+  flex-wrap:wrap;gap:12px;
+}
+.footer-links{display:flex;flex-wrap:wrap;gap:18px}
+.footer-links a{color:var(--muted);text-decoration:none;transition:color .2s}
+.footer-links a:hover{color:var(--g)}
+
+@media(max-width:680px){
+  nav{padding:0 20px}
+  main{padding:40px 20px 64px}
+  footer{padding:24px 20px;flex-direction:column;text-align:center;gap:10px}
+  .footer-links{justify-content:center}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="/" class="nav-brand">
+    <div class="nav-logo">🍃</div>
+    <span>CookiMag</span>
+  </a>
+  <a href="/" class="nav-back">← Retour</a>
+</nav>
+
+<main>
+  <div class="eyebrow"><span class="eyebrow-line"></span>Légal</div>
+  <h1>Conditions Générales de Vente</h1>
+  <p class="meta">Date d'entrée en vigueur : Avril 2025</p>
+
+  <div class="preamble">
+    <strong>Préambule.</strong> Les présentes Conditions Générales de Vente (ci-après « CGV ») régissent les relations contractuelles entre ML LABS, SARL dont le siège social est situé au 229 rue Saint-Honoré, 75001 Paris, France, RCS 992 573 568 (ci-après « ML LABS » ou « Nous »), et toute personne physique souscrivant un abonnement à l'application Cookimag (ci-après « l'Utilisateur » ou « Vous »).
+    <br><br>
+    En souscrivant un abonnement, l'Utilisateur accepte sans réserve les présentes CGV.
+  </div>
+
+  <h2>Article 1 – Objet</h2>
+  <p>Les présentes CGV ont pour objet de définir les conditions dans lesquelles ML LABS met à disposition de l'Utilisateur l'application mobile Cookimag (ci-après « l'Application »), permettant la découverte de recettes de cuisine, l'importation de recettes de cuisines ou d'astuces, la planification des repas et l'organisation des courses, via un abonnement payant.</p>
+
+  <h2>Article 2 – Accès à l'application et inscription</h2>
+  <p>2.1 L'accès à l'intégralité des fonctionnalités de Cookimag nécessite la création d'un compte utilisateur et la souscription d'un abonnement payant.</p>
+  <p>2.2 Lors de l'inscription, l'Utilisateur s'engage à fournir des informations exactes, complètes et à jour. Toute modification doit être effectuée sans délai dans les paramètres du compte.</p>
+  <p>2.3 L'Utilisateur est responsable de la confidentialité de ses identifiants de connexion et de toutes les actions effectuées depuis son compte.</p>
+  <p>2.4 L'Utilisateur ne doit pas créer plusieurs comptes. ML LABS se réserve le droit de suspendre ou supprimer tout compte en cas de fraude ou d'abus.</p>
+
+  <h2>Article 3 – Abonnements et prix</h2>
+  <p>3.1 ML LABS propose les formules d'abonnement suivantes :</p>
+  <ul>
+    <li>Abonnement mensuel : 8,99 EUR renouvelé automatiquement chaque mois</li>
+    <li>Abonnement annuel : 49.99 EUR renouvelé automatiquement chaque année</li>
+  </ul>
+  <p>3.2 Les tarifs en vigueur sont ceux affichés dans l'Application au moment de la souscription. Tous les prix sont indiqués en euros, toutes taxes comprises (TTC).</p>
+  <p>3.3 ML LABS se réserve le droit de modifier ses tarifs à tout moment. Toute modification tarifaire sera notifiée à l'Utilisateur au moins 30 jours avant son entrée en vigueur. L'Utilisateur qui refuse la modification peut résilier son abonnement sans frais avant la date d'application du nouveau tarif.</p>
+
+  <h2>Article 4 – Modalités de paiement</h2>
+  <p>4.1 Le paiement s'effectue exclusivement via le système d'achat intégré d'Apple (Apple In-App Purchase). ML LABS n'a pas accès aux informations bancaires de l'Utilisateur ; celles-ci sont gérées directement par Apple Inc. conformément aux conditions d'utilisation de l'App Store.</p>
+  <p>4.2 Le paiement est débité au moment de la confirmation de souscription, puis à chaque renouvellement automatique.</p>
+  <p>4.3 En cas d'échec de paiement, l'accès aux fonctionnalités premium pourra être suspendu jusqu'à régularisation.</p>
+
+  <h2>Article 5 – Renouvellement et résiliation</h2>
+  <p>5.1 Les abonnements se renouvellent automatiquement à l'échéance de la période en cours, sauf résiliation par l'Utilisateur au moins 24 heures avant la date de renouvellement.</p>
+  <p>5.2 La résiliation s'effectue directement depuis les paramètres de l'App Store (Réglages &gt; [Nom d'utilisateur] &gt; Abonnements). ML LABS n'est pas en mesure de procéder à cette résiliation à la place de l'Utilisateur.</p>
+  <p>5.3 En cas de résiliation, l'Utilisateur conserve l'accès aux fonctionnalités premium jusqu'à la fin de la période en cours déjà payée. Aucun remboursement au prorata ne sera accordé pour la période restante, sauf exercice du droit de rétractation dans les conditions de l'article 7.</p>
+
+  <h2>Article 6 – Durée et résiliation par ML LABS</h2>
+  <p>6.1 ML LABS se réserve le droit de suspendre ou résilier l'accès d'un Utilisateur en cas de violation des présentes CGV, des Conditions d'Utilisation ou de toute disposition légale applicable.</p>
+  <p>6.2 En cas de cessation définitive du service, ML LABS informera les Utilisateurs par email avec un préavis raisonnable. Le montant correspondant à la période d'abonnement non utilisée sera remboursé.</p>
+
+  <h2>Article 7 – Droit de rétractation</h2>
+  <p>7.1 Conformément aux articles L. 221-18 et suivants du Code de la consommation, l'Utilisateur dispose d'un délai de 14 jours calendaires à compter de la date de souscription pour exercer son droit de rétractation, sans avoir à justifier de motifs ni à payer de pénalités.</p>
+  <p>7.2 Pour exercer ce droit, l'Utilisateur doit notifier sa décision par email à : <a href="mailto:cookimaag@gmail.com">cookimaag@gmail.com</a>, avant l'expiration du délai de 14 jours, en indiquant clairement sa demande de rétractation.</p>
+  <p>7.3 Conformément à l'article L. 221-28 du Code de la consommation, le droit de rétractation ne peut être exercé pour les contrats de fourniture d'un contenu numérique dont l'exécution a commencé avec l'accord préalable exprès de l'Utilisateur et renoncement exprès à son droit de rétractation. ML LABS demandera cet accord exprès lors de la souscription.</p>
+  <p>7.4 En cas de rétractation valablement exercée, ML LABS procèdera au remboursement par le même moyen de paiement que celui utilisé, dans un délai de 14 jours.</p>
+
+  <h2>Article 8 – Garanties légales</h2>
+  <p>L'Utilisateur bénéficie des garanties légales de conformité prévues aux articles L. 224-25-12 à L. 224-25-26 du Code de la consommation, applicables aux contenus et services numériques. En cas de défaut de conformité, ML LABS s'engage à mettre le service en conformité dans un délai raisonnable.</p>
+
+  <h2>Article 9 – Responsabilité</h2>
+  <p>9.1 ML LABS met tout en œuvre pour assurer la disponibilité et la qualité de l'Application, sans toutefois garantir une disponibilité ininterrompue 24h/24, 7j/7.</p>
+  <p>9.2 ML LABS ne saurait être tenu responsable des dommages indirects résultant de l'utilisation ou de l'impossibilité d'utiliser l'Application, notamment en cas de perte de données, de manque à gagner, ou d'interruption d'activité.</p>
+  <p>9.3 Les recettes proposées dans l'Application sont fournies à titre informatif. L'Utilisateur est seul responsable de la bonne exécution des recettes, du respect des règles d'hygiène alimentaire et de l'adaptation aux besoins nutritionnels spécifiques.</p>
+
+  <h2>Article 10 – Propriété intellectuelle</h2>
+  <p>L'ensemble des contenus disponibles sur Cookimag (recettes, photos, textes, interfaces, logos) sont la propriété de ML LABS ou de ses partenaires et sont protégés par le droit de la propriété intellectuelle. Toute reproduction ou utilisation non autorisée est interdite.</p>
+
+  <h2>Article 11 – Données personnelles</h2>
+  <p>Le traitement des données personnelles de l'Utilisateur est régi par la <a href="/confidentialite.html">Politique de confidentialité</a> de Cookimag, disponible dans l'Application et accessible à tout moment.</p>
+
+  <h2>Article 12 – Modification des CGV</h2>
+  <p>ML LABS se réserve le droit de modifier les présentes CGV à tout moment. En cas de modification substantielle, l'Utilisateur sera informé par email au moins 30 jours avant l'entrée en vigueur des nouvelles conditions. L'utilisation continue de l'Application après ce délai vaut acceptation des nouvelles CGV.</p>
+
+  <h2>Article 13 – Règlement des litiges</h2>
+  <p>13.1 En cas de litige, l'Utilisateur peut contacter ML LABS à l'adresse : <a href="mailto:cookimaag@gmail.com">cookimaag@gmail.com</a>. ML LABS s'engage à répondre dans un délai de 30 jours.</p>
+  <p>13.2 En cas d'échec de résolution amiable, l'Utilisateur peut recourir à la médiation de la consommation conformément aux articles L. 616-1 et R. 616-1 du Code de la consommation.</p>
+  <p>13.3 Les présentes CGV sont soumises au droit français. À défaut de résolution amiable, tout litige sera soumis aux juridictions compétentes françaises.</p>
+</main>
+
+<footer>
+  <span>© 2025 CookiMag — Une app <strong>Maison Lamotte</strong></span>
+  <span class="footer-links">
+    <a href="/mentions-legales.html">Mentions légales</a>
+    <a href="/cgv.html">CGV</a>
+    <a href="/conditions-utilisation.html">Conditions d'utilisation</a>
+    <a href="/confidentialite.html">Confidentialité</a>
+    <a href="/non-responsabilite.html">Non-responsabilité</a>
+  </span>
+</footer>
+
+</body>
+</html>
